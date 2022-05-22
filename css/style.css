@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+/* colors */
+
+:root {
+	--font-sans: "Inter", sans-serif;
+	--no-color: transparent;
+	--orange: #f9602a;
+	--white: #ffffff;
+	--black: #212121;
+	--dark-gray: #545454;
+	--medium-gray: #767676;
+	--light-gray: #989898;
+}
+
+/* standardizing */
+
+* {
+	color: var(--black);
+	font-family: var(--font-sans);
+	font-size: 16px;
+	font-weight: 400;
+}
+
+/* defining sizes */
+
+body {
+	width: 100%;
+}
+
+#layout {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+/* standard container */
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 32px;
+}
+
+/* nav bar */
+
+.block-nav {
+	width: 100%;
+	height: 64px;
+	position: fixed;
+	background-color: var(--white);
+}
+
+.nav {
+	height: 64px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--white);
+}
+
+.nav-logo {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	min-width: 3rem;
+	min-height: 3rem;
+	width: 3rem;
+	height: 3rem;
+}
+
+.logo > rect {
+	fill: var(--orange);
+}
+
+.logo:hover > rect {
+	fill: var(--dark-gray);
+}
+
+.nav-links {
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.links-anchor {
+	padding-left: 0.5rem;
+	text-decoration: none;
+}
+
+.anchor-text {
+	color: var(--medium-gray);
+	font-weight: 700;
+}
+
+.anchor-text:hover {
+	color: var(--black);
+}
+
+.links-curriculo {
+	padding-left: 0.5rem;
+	text-decoration: none;
+}
+
+.curriculo-text {
+	color: var(--black);
+	font-weight: 700;
+}
+
+.curriculo-text:hover {
+	color: var(--medium-gray);
+}
+
+/* about */
+
+.block-sobre {
+	width: 100%;
+	height: 100vh;
+	background-image: url("../img/shrimp.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+#sobre {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.sobre-text > * {
+	color: var(--white);
+}
+
+.sobre-h1 {
+	font-size: 15rem;
+	font-weight: 700;
+	color: var(--orange);
+}
+
+.sobre-h1:hover {
+	color: var(--dark-gray);
+}
+
+.sobre-h2 {
+	font-size: 5rem;
+	padding-bottom: 1rem;
+	font-weight: 700;
+}
+
+.sobre-h3 {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+/* experiencia */
+
+.block-experiencia {
+	width: 100%;
+	height: 100vh;
+}
+
+#experiencia {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.experiencia-photo {
+	width: 500px;
+}
+
+.experiencia-p,
+.experiencia-p > span {
+	font-size: 1.5rem;
+}
+
+.experiencia-p > span {
+	color: var(--orange);
+	font-weight: 600;
+}
+/* galeria */
+
+.block-galeria {
+	width: 100%;
+	height: 100vh;
+}
+
+#galeria {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.galeria-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 75vh;
+}
+
+.galeria-image {
+	width: 20rem;
+	height: 20rem;
+	min-width: 20rem;
+	min-height: 20rem;
+	object-fit: cover;
+}
+
+.galeria-text {
+	color: var(--medium-gray);
+	font-size: 0.75rem;
+	margin-top: 0.325rem;
+}
+
+/* contato */
+
+.block-contatos {
+	width: 100%;
+	height: 100vh;
+}
+
+#contatos {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contatos-video {
+	width: 1136px;
+	height: 639px;
+	border: none;
+}
